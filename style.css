@@ -170,7 +170,7 @@ svg{
 
 .desc{
     width: 100%;
-    margin: auto;
+    /* margin: auto; */
 }
 
 .desc table{
@@ -182,7 +182,7 @@ svg{
     font-family: 'Mulish', sans-serif;
     font-size: 16px;
     font-weight: 600;
-    margin: auto;
+    /* margin: auto; */
 }
 
 .linha_topo{
@@ -212,21 +212,24 @@ svg{
     
 }
 
-.lista_chamados{
+.listar{
     width: 100%;
     height: 100%;
 }
 
-.lista_chamados .chamados{
+.listar .chamados{
     width: 95%;
     height: 40px;
     margin: 23px auto;
     border-radius: 5px;
     background-color: #f9f9f9;
     box-shadow: 0 0 5px gray;
+    font-family: 'Mulish';
+    font-size: 18px;
+    display: flex;
 }
 
-.lista_chamados.grid{
+.listar.grid{
     width: 100%;
     height: 100%;
     display: grid;
@@ -234,7 +237,7 @@ svg{
     grid-template-rows: 1fr 1fr;
 }
 
-.lista_chamados.grid .chamados{
+.listar.grid .chamados{
     width: 75%;
     height: 75%;
     margin: auto auto;

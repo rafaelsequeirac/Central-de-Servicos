@@ -1,6 +1,6 @@
 const list = document.querySelector(".list");
 const grid = document.querySelector(".grid");
-const chamado = document.querySelector(".lista_chamados");
+const chamado = document.querySelector(".listar");
 const btnList = document.querySelector("#list");
 const btnGrid = document.querySelector("#grid");
 const desc = document.querySelector(".desc");
@@ -87,14 +87,14 @@ const controls = {
 }
 
 const lista = {
-    create(lista_chamados) {
-        const div = document.createElement('div')
-        div.classList.add('chamados')
-        div.innerHTML = 'ok'
-        html.get('.lista_chamados').appendChild(div)
+    create(chamados) {
+        const div = document.createElement('div');
+        div.className = 'chamados';
+        div.innerHTML = '<tr> <td>068755</td><td>017356</td><td>15:10h</td><td>Aberto</td><td>202221071536</td></tr>';
+        html.get('.listar').appendChild(div);
     },
     update() {
-        html.get('.lista_chamados').innerHTML = ""
+        html.get('.listar').innerHTML = ""
 
         let page = state.page - 1
         let start = page * state.perPage
@@ -155,6 +155,7 @@ const buttons = {
 
 function update() {
     lista.update()
+    lista.create()
     buttons.update()
 }
 
