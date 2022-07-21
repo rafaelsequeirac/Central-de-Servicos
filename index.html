@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Central Atendente</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+    <section class="sideleft">
+        <div class="func">
+            <div class="img_atd">
+                <!-- <p>C(Letra Inic Func)</p> -->
+            </div>
+            <div class="dados_func">
+                <h1>Colaborador</h1>
+                <p>Auxiliar de suporte de T.I</p>
+            </div>
+        </div>
+
+        <div class="opcoes_chamados">
+            <ul>
+                <li><a href="#"><i data-feather="monitor"></i> Fila de Chamados</a></li>
+                <li><a href="#"><i data-feather="user"></i> Meus Chamados</a></li>
+                <li><a href="#"><i data-feather="check-square"></i> Chamados Finalizados</a></li>
+                <li><a href=""><i data-feather="file-text"></i> Relatórios</a></li>
+            </ul>
+        </div>
+        <div class="btn_exit">
+            <a href=""><i data-feather="log-out"></i>Sair</a>
+        </div>
+    </section>
+    <section class="sideright">
+        <div class="filter">
+            <div class="divsearch">
+                <input type="text" class="search" placeholder="Buscar...">
+                <button type="submit" class="btnsearch"><i data-feather="search"></i></button>
+            </div>
+            <div class="btn_filter">
+                <!-- <i data-feather="filter"></i> -->
+                <button id="list" class="list"><i data-feather="list"></i></button>
+                <button id="grid" class="grid"><i data-feather="grid"></i></button>
+            </div>
+            
+        </div>
+        <div class="container_chamados">
+            <div class="desc">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Solicitante</th>
+                            <th>Local</th>
+                            <th>Tempo</th>
+                            <th>Status</th>
+                            <th>Nº Chamado</th>
+                        </tr>
+                    </thead>
+                    <!-- <tbody>
+                        <tr>
+                            <td>068755</td>
+                        </tr>
+                    </tbody> -->
+                </table>
+                
+                
+            </div>
+            <!-- <hr class="linha_topo"> -->
+            <div class="lista_chamados">
+                <div class="chamados"></div>
+                <div class="chamados"></div>
+                <div class="chamados"></div>
+                <div class="chamados"></div>
+                <div class="chamados"></div>
+                <div class="chamados"></div>
+                <div class="chamados"></div>
+                <div class="chamados"></div>
+                <div class="chamados"></div>
+                <div class="chamados"></div>
+                <div class="chamados"></div>
+                <div class="chamados"></div>
+                <div class="chamados"></div>
+                <div class="chamados"></div>
+                <div class="chamados"></div>
+                <div class="chamados"></div>
+                <div class="chamados"></div>
+                <div class="chamados"></div>
+                <div class="chamados"></div>
+                <div class="chamados"></div>
+                <div class="chamados"></div>
+                <div class="chamados"></div>
+                <div class="chamados"></div>
+                <div class="chamados"></div>
+                <div class="chamados"></div>
+                <div class="chamados"></div>
+                <div class="chamados"></div>
+                <div class="chamados"></div>
+                <div class="chamados"></div>
+                <div class="chamados"></div>
+                <div class="chamados"></div>
+                <div class="chamados"></div>
+                <div class="chamados"></div>
+                <div class="chamados"></div>
+                <div class="chamados"></div>
+                <div class="chamados"></div>
+                <div class="chamados"></div>
+            </div>
+        </div>
+        <div id="paginate">
+            <div class="controls">
+                <div class="first"><i data-feather="chevrons-left"></i></div>
+                <div class="prev"><i data-feather="chevron-left"></i></div>
+                <div class="numbers">
+                    <div>1</div>
+                </div>
+                <div class="next"><i data-feather="chevron-right"></i></div>
+                <div class="last"><i data-feather="chevrons-right"></i></div>
+            </div>
+        </div>
+        <div class="footer">
+            <h2>Desenvolvido pela equipe de GTIC</h2>
+        </div>
+    </section>
+    
+    <script src="script.js"></script>
+    <script>
+        feather.replace()
+    </script>
+</body>
+</html>
